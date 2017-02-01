@@ -6,6 +6,12 @@ namespace Icarus\UI;
 use Nette\ComponentModel\IContainer;
 
 
+/**
+ * @method addDatePicker($name, $label = NULL, $maxLength = NULL)
+ * @method addDateTimePicker($name, $label = NULL, $maxLength = NULL)
+ * @method addTbDatePicker($name, $label = NULL, $maxLength = NULL)
+ * @method addTbDateTimePicker($name, $label = NULL, $maxLength = NULL)
+ */
 class Form extends \Nette\Application\UI\Form
 {
 
