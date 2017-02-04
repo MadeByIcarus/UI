@@ -27,6 +27,7 @@
     "php": ">=5.6",
     "nette/application": "^2.4",
     "nette/forms": "^2.4",
-    "radekdostal/nette-datetimepicker": "^2.5"
+    "radekdostal/nette-datetimepicker": "^2.5",
+    "ublaboo/datagrid": "^5.0"
   }
 }
