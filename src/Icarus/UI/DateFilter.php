@@ -1,6 +1,6 @@
 <?php
 
-namespace App\UI\Latte\Filters;
+namespace Icarus\UI;
 
 
 use Nette\InvalidStateException;

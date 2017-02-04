@@ -1,6 +1,6 @@
 <?php
 
-namespace App\UI;
+namespace Icarus\UI;
 
 
 use App\UI\Latte\Filters\DateFilter;
