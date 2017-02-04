@@ -3,8 +3,7 @@
 namespace Icarus\UI\Controls\DatePickers;
 
 
-use App\UI\Latte\Filters\DateFilter;
-use Nette\Forms\Container;
+use Icarus\UI\DateFilter;
 use RadekDostal\NetteComponents\DateTimePicker\DatePicker;
 use RadekDostal\NetteComponents\DateTimePicker\DateTimePicker;
 
