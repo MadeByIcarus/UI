@@ -3,7 +3,6 @@
 namespace Icarus\UI;
 
 
-use App\UI\Latte\Filters\DateFilter;
 use Nette\Bridges\ApplicationLatte\Template;
 use Ublaboo\DataGrid\Column\ColumnDateTime;
 use Ublaboo\DataGrid\Filter\FilterDate;
@@ -41,9 +40,6 @@ abstract class DataGrid extends \Ublaboo\DataGrid\DataGrid
 
     /** @var array */
     protected $registeredDateTimeColumns = [];
-
-    /** @var array */
-    protected $registeredDateTimeFilters = [];
 
 
 
