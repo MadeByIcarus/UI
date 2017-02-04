@@ -1,0 +1,22 @@
+{* to be included in/copied to latte layout *}
+<script>
+    $(document).ready(function () {
+
+        $(".datetimepicker").datetimepicker({
+            format: {$jsDateTimeFormat},
+            minView: 0,
+            autoclose: true
+        });
+
+
+        $(".datepicker").datetimepicker({
+            format: {$jsDateFormat},
+            minView: 2,
+            autoclose: true
+        });
+
+
+        $("[data-provide=datepicker]").datetimepicker(); {* ublaboo/datagrid *}
+
+    });
+</script>

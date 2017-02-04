@@ -1,0 +1,22 @@
+parameters:
+  defaultDateFilterLanguage: %defaultLanguage% # or string if you don't have any variable with default language
+  dateFormats: # value is an array [format_for_php, format_for_js]
+    en:
+      date: [Y-m-d, yyyy-m-d]
+      datetime: [Y-m-d H:i, yyyy-m-d hh:ii]
+      datetime_complete: [Y-m-d H:i:s, yyyy-m-d hh:ii:ss]
+    cs:
+      date: [j. n. Y, d. m. yyyy]
+      datetime: [j. n. Y H:i, d. m. yyyy hh:ii]
+      datetime_complete: [j. n. Y H:i:s, d. m. yyyy hh:ii:ss]
+
+
+services:
+
+  LatteDateFilter: App\UI\Latte\Filters\DateFilter(%dateFormats%, %defaultDateFilterLanguage%)
+
+
+  latte.latteFactory:
+    setup:
+      - addFilter('date', @LatteDateFilter::date)
+      - addFilter('datetime', @LatteDateFilter::datetime)
