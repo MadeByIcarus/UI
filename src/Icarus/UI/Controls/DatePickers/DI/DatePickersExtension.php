@@ -3,8 +3,8 @@
 namespace Icarus\UI\Controls\DatePickers\DI;
 
 
-use App\UI\Latte\Filters\DateFilter;
-use Icarus\UI\Controls\Date\DatePicker\DatePickers;
+use Icarus\UI\Controls\DatePickers\DatePickers;
+use Icarus\UI\DateFilter;
 use Nette\DI\CompilerExtension;
 use Nette\PhpGenerator\ClassType;
 
