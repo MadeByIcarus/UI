@@ -22,6 +22,6 @@ class FileManagerExtensionsExtension extends CompilerExtension
         parent::afterCompile($class);
 
         $initialize = $class->methods['initialize'];
-        $initialize->addBody(FileManager::class . '::register');
+        $initialize->addBody(FileManager::class . '::register()');
     }
 }
