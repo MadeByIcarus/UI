@@ -120,8 +120,8 @@ class FileManager extends TextBase
                 'data-id' => $this->getHtmlId()
             ]);
 
-        $container->add($input);
-        $container->add($preview);
+        $container->addHtml($input);
+        $container->addHtml($preview);
 
         return $container;
     }
