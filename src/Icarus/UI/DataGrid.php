@@ -31,6 +31,7 @@ abstract class DataGrid extends \Ublaboo\DataGrid\DataGrid
             'ublaboo_datagrid.previous' => 'Předchozí',
             'ublaboo_datagrid.next' => 'Další',
             'ublaboo_datagrid.choose' => 'Vyberte',
+            'ublaboo_datagrid.multiselect_choose' => 'Vyberte',
             'ublaboo_datagrid.execute' => 'Provést'
         ]
     ];
