@@ -18,7 +18,7 @@ class FileManager extends TextBase
 
     protected $fileType;
 
-    public static function register($methodName = 'addFileSelect')
+    public static function register($methodName = 'addFilePicker')
     {
         Container::extensionMethod($methodName, function (Container $_this, $name, $label, $type = self::TYPE_ALL, $subfolder = self::DEFAULT_FOLDER) {
             $control = new FileManager($label, $type, $subfolder);
