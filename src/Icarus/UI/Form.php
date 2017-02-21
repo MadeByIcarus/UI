@@ -3,6 +3,7 @@
 namespace Icarus\UI;
 
 
+use Icarus\UI\Controls\FileManager\FileManager;
 use Nette\ComponentModel\IContainer;
 
 
@@ -11,6 +12,8 @@ use Nette\ComponentModel\IContainer;
  * @method addDateTimePicker($name, $label = NULL, $maxLength = NULL)
  * @method addTbDatePicker($name, $label = NULL, $maxLength = NULL)
  * @method addTbDateTimePicker($name, $label = NULL, $maxLength = NULL)
+ *
+ * @method addFilePicker($name, $label = NULL, $type = FileManager::TYPE_ALL, $subfolder = FileManager::DEFAULT_FOLDER)
  */
 class Form extends \Nette\Application\UI\Form
 {
