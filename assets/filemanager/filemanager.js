@@ -19,7 +19,7 @@ if (typeof filemanager_title == 'undefined')
     var filemanager_title = 'Filemanager';
 
 if (typeof filemanager_basePath == 'undefined')
-    alert('Javascript variable filemanager_filemanager_basePath is not defined!');
+    alert('Javascript variable filemanager_basePath is not defined!');
 
 
 var modal = '\
