@@ -24,6 +24,9 @@ abstract class DataGrid extends \Ublaboo\DataGrid\DataGrid
             'ublaboo_datagrid.from' => 'z',
             'ublaboo_datagrid.reset_filter' => 'Resetovat filtr',
             'ublaboo_datagrid.group_actions' => 'Hromadné akce',
+            'ublaboo_datagrid.show' => 'Show',
+            'ublaboo_datagrid.add' => 'Add',
+            'ublaboo_datagrid.edit' => 'Edit',
             'ublaboo_datagrid.show_all_columns' => 'Zobrazit všechny sloupce',
             'ublaboo_datagrid.show_default_columns' => 'Zobrazit výchozí sloupce',
             'ublaboo_datagrid.hide_column' => 'Skrýt sloupec',
@@ -31,8 +34,15 @@ abstract class DataGrid extends \Ublaboo\DataGrid\DataGrid
             'ublaboo_datagrid.previous' => 'Předchozí',
             'ublaboo_datagrid.next' => 'Další',
             'ublaboo_datagrid.choose' => 'Vyberte',
+            'ublaboo_datagrid.choose_input_required' => 'Group action text not allow empty value',
+            'ublaboo_datagrid.execute' => 'Execute',
+            'ublaboo_datagrid.save' => 'Save',
+            'ublaboo_datagrid.cancel' => 'Cancel',
             'ublaboo_datagrid.multiselect_choose' => 'Vyberte',
-            'ublaboo_datagrid.execute' => 'Provést'
+            'ublaboo_datagrid.multiselect_selected' => 'Vybráno {0}',
+            'ublaboo_datagrid.filter_submit_button' => 'Filtr',
+            'ublaboo_datagrid.show_filter' => 'Zobrazit filtr',
+            'ublaboo_datagrid.per_page_submit' => 'Změnit'
         ]
     ];
 
