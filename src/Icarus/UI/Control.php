@@ -3,7 +3,6 @@
 namespace Icarus\UI;
 
 
-use Nette\Application\UI\Form;
 use Nette\Bridges\ApplicationLatte\Template;
 use Nette\Http\IRequest;
 use Nette\Localization\ITranslator;
