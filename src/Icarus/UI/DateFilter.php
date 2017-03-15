@@ -59,6 +59,10 @@ class DateFilter extends Object
     {
         $date = $this->prepareValue($value);
 
+        if (!$date) {
+            return "";
+        }
+
         return $date->format($format ?: $this->getDateFormat());
     }
 
@@ -68,6 +72,10 @@ class DateFilter extends Object
     {
         $date = $this->prepareValue($value);
 
+        if (!$date) {
+            return "";
+        }
+        
         return $date->format($this->getDateTimeFormat($includeSeconds));
     }
 
@@ -135,6 +143,9 @@ class DateFilter extends Object
      */
     private function prepareValue($value)
     {
+        if (!$value) {
+            return null;
+        }
         if (!$value instanceof \DateTime) {
             $value = new \DateTime($value);
         }
