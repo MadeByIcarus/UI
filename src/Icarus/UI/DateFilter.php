@@ -191,4 +191,11 @@ class DateFilter
             }
         }
     }
+
+
+
+    protected function getReflection()
+    {
+        return new \ReflectionObject($this);
+    }
 }
