@@ -5,12 +5,14 @@ namespace Icarus\UI;
 
 use Nette\InvalidStateException;
 use Nette\Localization\ITranslator;
-use Nette\Object;
+use Nette\SmartObject;
 use Nette\Utils\Strings;
 
 
-class DateFilter extends Object
+class DateFilter
 {
+
+    use SmartObject;
 
     const DEFAULT_LANGUAGE = 'en';
 
@@ -75,7 +77,7 @@ class DateFilter extends Object
         if (!$date) {
             return "";
         }
-        
+
         return $date->format($this->getDateTimeFormat($includeSeconds));
     }
 
